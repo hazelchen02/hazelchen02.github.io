@@ -1,0 +1,42 @@
+#banner, #content, #info, #footer {
+    padding: 10px;
+}
+#content, #info, #nav {
+margin-top: 120px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper {
+    width: 800px;
+    margin:0 auto;
+}
+#banner {
+    width:800px;
+    height:100px;
+    color:aliceblue;
+    clear:both;
+    position:fixed;
+}
+#nav {
+    width:150px;
+    height: 120px;
+    float:left;
+}
+#info {
+    width: 120px;
+    height: 150px;
+    float:left;
+}
+#content {
+    width: 490px;
+    float:left;
+}
+#footer {
+    width:800px;
+    height:30px;
+    color:azure;
+    float:left;
+    clear: both;
+}

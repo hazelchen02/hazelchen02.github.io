@@ -128,7 +128,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- JavaScript来实现加快滚动效果 -->
+    <!-- JavaScript来实现加快滚动效果（滚动速度为0.5秒） -->
     <script>
         // 捕获导航栏链接的点击事件
         $(document).ready(function(){
@@ -140,10 +140,10 @@
                     // 获取链接的哈希值
                     var hash = this.hash;
 
-                    // 使用动画滚动到链接的位置，并将持续时间减小为100毫秒
+                    // 使用动画滚动到链接的位置，并将持续时间设置为0.5秒（500毫秒）
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 100, function(){
+                    }, 500, function(){
                         // 在完成滚动后，将哈希添加到URL中（用于书签）
                         window.location.hash = hash;
                     });

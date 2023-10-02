@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS#2</title>
+    
+    <!-- 引入Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+        /* 更改整个网页的背景颜色为浅灰色 */
+        body {
+            background-color: lightgray;
+        }
+
+        /* 设置整个文档的margin和padding为零 */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 讓導覽欄固定在頂端 */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            scroll-margin-top: 100px; /* 为导航栏添加scroll-margin-top */
+        }
+
+        /* 自定义banner的样式 */
+        .section-banner {
+            background-color: lightblue; /* 淡蓝色背景 */
+            color: white; /* 白色文字颜色 */
+            padding: 50px 0; /* 上下内边距，使其充满屏幕高度 */
+            margin-bottom: 0; /* 去除banner与后面内容的外边距 */
+            border-radius: 0; /* 移除圆角 */
+            margin-top: 0; /* 设置与导航栏同级的banner的margin-top为0 */
+        }
+
+        /* 自定义导航栏前方的banner样式，设置margin-top为0 */
+        .navbar-banner {
+            margin-top: 0;
+        }
+
+        /* 设置 #home 的高度为 150px */
+        #home {
+            height: 150px;
+        }
+
+        /* 设置 #section1 和 #section2 的高度为 100vh */
+        #section1, #section2 {
+            height: 100vh;
+        }
+
+        /* 将 .custom-section 的宽度设置为原来的一半并居中 */
+        .custom-section {
+            background-color: lightgray; /* 淡灰色背景 */
+            color: black; /* 黑色文字颜色 */
+            padding: 100px 0; /* 上下内边距，增加上边距和下边距 */
+            margin: 0 auto; /* 左右自动居中 */
+            width: 50%; /* 设置宽度为原来的一半 */
+            scroll-margin-top: 100px; /* 为section添加scroll-margin-top */
+        }
+
+        /* .jumbotron 左右两边都留白且置中 */
+        .jumbotron {
+            padding: 50px;
+            text-align: left; /* 文本左对齐 */
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner 1 (淡蓝色背景) -->
+    <div id="home" class="jumbotron text-center banner section-banner" style="margin-top: 0;">
+        <h1>Welcome to AS#2</h1>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">AS#2</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">Section 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">Section 2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner 2 (Section 1前面的banner，淡蓝色背景) -->
+    <div id="section1" class="jumbotron text-center banner section-banner">
+        <h1>Section 1 Banner</h1>
+    </div>
+
+    <!-- 第一個Section（淡灰色背景，去除上边距） -->
+    <section id="section1" class="container-fluid custom-section">
+        <div class="jumbotron">
+            <h2>Section 1</h2>
+            <p>This is the content of Section 1.</p>
+        </div>
+    </section>
+
+    <!-- Banner 3 (Section 2前面的banner，淡蓝色背景) -->
+    <div id="section2" class="jumbotron text-center banner section-banner">
+        <h1>Section 2 Banner</h1>
+    </div>
+
+    <!-- 第二個Section（淡灰色背景，去除上边距） -->
+    <section id="section2" class="container-fluid custom-section">
+        <div class="jumbotron">
+            <h2>Section 2</h2>
+            <p>This is the content of Section 2.</p>
+        </div>
+    </section>
+
+    <!-- 引入Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript来实现加快滚动效果 -->
+    <script>
+        // 捕获导航栏链接的点击事件
+        $(document).ready(function(){
+            $("a.nav-link").on('click', function(event) {
+                if (this.hash !== "") {
+                    // 阻止默认的点击事件
+                    event.preventDefault();
+
+                    // 获取链接的哈希值
+                    var hash = this.hash;
+
+                    // 使用动画滚动到链接的位置，并将持续时间减小为100毫秒
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 100, function(){
+                        // 在完成滚动后，将哈希添加到URL中（用于书签）
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

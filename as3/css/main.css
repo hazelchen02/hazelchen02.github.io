@@ -1,1 +1,114 @@
-
+.jumbotron {
+    background-image: url("https://hazelchen02.github.io/as3/assets/image4_1.jpg");
+    background-color: #000000;
+    color: #fff;
+    padding: 250px 25px;
+    font-family: sans-serif;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#nav{
+    background-color:black;
+    color: #fff;
+    padding: 10px;
+}
+li{
+    display:block;
+}
+li:hover{
+    background-color:whitesmoke;
+}
+#first {
+	background-image: url("https://hazelchen02.github.io/as3/assets/image1.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: 800px;
+	filter: grayscale(100%);
+}
+#second {
+	background-image: url("https://hazelchen02.github.io/as3/assets/image1.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: 800px;
+	filter: grayscale(20%);
+}
+#second .row div:first-child {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px
+}
+#third {
+	background-image: url("https://hazelchen02.github.io/as3/assets/image2.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: 800px;
+	filter: grayscale(100%);
+}
+#fourth {
+	background-image: url("https://hazelchen02.github.io/as3/assets/image2.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: 800px;
+	filter: grayscale(20%);
+}
+#fourth .row div:last-child {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px
+}
+#fifth {
+	background-image: url("https://hazelchen02.github.io/as3/assets/image6.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: 800px;
+	filter: grayscale(100%);
+}
+#sixth {
+	background-image: url("https://hazelchen02.github.io/as3/assets/image6.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: 800px;
+	filter: grayscale(20%);
+}
+#sixth .row div:first-child {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px
+}
+#seventh {
+	background-image: url("https://hazelchen02.github.io/as3/assets/image3.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: 800px;
+	filter: grayscale(100%);
+}
+#eighth {
+	background-image: url("https://hazelchen02.github.io/as3/assets/image3.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    min-height: 800px;
+	filter: grayscale(20%);
+}
+#eighth .row div:last-child {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px
+}

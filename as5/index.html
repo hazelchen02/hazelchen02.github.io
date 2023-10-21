@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AS#5</title>
+  <style>
+    #leading_sec {
+      position: relative;
+      height: 200vh;
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+
+    #video {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: 500vh;
+      z-index: -1;
+      margin: 0;
+      padding: 0;
+    }
+
+    #ending_sec {
+      position: relative;
+      top: 500vh;
+      height: 200vh;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="leading_sec">
+    <h1>Leading Section</h1>
+  </div>
+  <div class="container-fluid">
+    <video id="video" src="https://web.cw.com.tw/climate-2020/landing/cover-mobile.mp4"></video>
+  </div>
+  <div id="ending_sec">
+    <h1>Ending Section</h1>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      const videoElement = $("#video").get(0);
+
+      if (!videoElement) {
+        console.error("Video element not found");
+        return;
+      }
+
+      const maxScroll = $(document).height() - $(window).height();
+
+      $(window).scroll(function () {
+        const currentScrollPosition = $(document).scrollTop();
+
+        if (videoElement.duration) {
+          videoElement.currentTime = videoElement.duration * (currentScrollPosition / maxScroll);
+        } else {
+          console.warn("Video duration is not available");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

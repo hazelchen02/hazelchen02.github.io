@@ -2,7 +2,19 @@
 *{
   margin:0;
   padding:0;
-  }
+}
+
+body{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #383838;
+}
+
+text{
+  line-height: 1.5;
+}
 .banner1 p{
   color: whitesmoke;
   font-weight: bolder;
@@ -32,13 +44,6 @@
   background-color:#273e54;
   font-size: 35px;
   text-align:left;
-}
-body {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: #383838;
 }
 
 .container {
@@ -185,55 +190,63 @@ li:hover{
   text-align: center;
   color: white;
 }
-#first {
+#content1_1st {
 	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
   background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
-  background-position-x: 80px;
+  background-position-x: 750px;
   background-position-y: 95px;
   min-height: 800px;
 }
-#second {
+#content1_2nd {
 	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
   background-color:#383838;
 	background-attachment: fixed;
   background-size: 33%;
-  background-position-x: 80px;
+  background-position-x: 750px;
   background-position-y: 95px;
   background-repeat: no-repeat;
   min-height: 800px;
 }
-#third {
-	background-image: url("https://hazelchen02.github.io/as3/assets/image2.jpg");
+#content1_3rd {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
   background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-  background-size: 50%;
-  background-position-x:left;
-  background-position-y:95px;
+  background-size: 33%;
+  background-position-x: 750px;
+  background-position-y: 95px;
   min-height: 800px;
 }
-#fourth {
-	background-image: url("https://hazelchen02.github.io/as3/assets/image3.jpg");
+#content1_4th {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
   background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-  background-size: 50%;
-  background-position-x:left;
-  background-position-y:95px;
+  background-size: 33%;
+  background-position-x: 750px;
+  background-position-y: 95px;
   min-height: 800px;
 }
-.container-fluid .row div:last-child {
+.container-fluid .row {
   color: white;
-  padding: 20px
+  padding: 60px
 }
-.container-fluid h1{
+#content1_2nd h1{
   width: 100%;
   height: 22%;
   font-size: 50px;
   font-weight: bold;
+}
+.line{
+  width: 3px;
+  height: 1000px;
+  position: relative;
+  background-position-x: 100px;
+  background-position-y: center;
+  background-color: whitesmoke;
 }
 .link-top {
   width: 30%;
@@ -241,13 +254,142 @@ li:hover{
   border-top: solid whitesmoke 2px;
 }
 .container-fluid h2{
-  height: 15%;
+  height: 85px;
   font-weight: bold;
+  font-size: 30px;
 }
 .container-fluid p{
   font-size: 20px;
   width: 530px;
 }
-#third #fourth p{
-  top:100px;
+.sep{
+  background-color: #383838;
+  height: 400px;
+}
+#content2_1st h1{
+  width: 100%;
+  height: 38%;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+#content2_1st {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_2nd {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_3rd {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_4th {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_5th {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_6th {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_7th {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_8th {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_9th {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_10th {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_11th {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
+}
+#content2_12th {
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
+  background-color:#383838;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
+  min-height: 800px;
 }

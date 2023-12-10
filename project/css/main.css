@@ -3,70 +3,36 @@
   margin:0;
   padding:0;
   }
-.banner{
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items:center;
+.banner1 p{
+  color: whitesmoke;
+  font-weight: bolder;
+  font-style: italic;
 }
-.banner video{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left:0;
-  object-fit: cover;
+#line1 {
+  background-color: #3C6287;
+  font-size: 40px;
+  text-align: right;
 }
-.banner h1{
-  position: absolute;
-  top:-130px;
-  left:0;
-  width: 100%;
-  height: 100%;
-  font-size: 65px;
-  text-align: center;
-  line-height:100vh;
-  color: white;
-  font-weight: bold;
+#line2 {
+  background-color:darkred;
+  font-size: 47px;
+  text-align:right;
 }
-.banner h2{
-  position: absolute;
-  top:100px;
-  left:0;
-  width: 100%;
-  height: 100%;
-  font-size: 20px;
-  text-align: center;
-  line-height:100vh;
-  color: white;
-  font-weight: bold;
+#line3 {
+  background-color:black;
+  font-size: 30px;
+  text-align:center;
 }
-.banner p{
-  position: absolute;
-  top:135px;
-  left:0;
-  width: 100%;
-  height: 100%;
-  font-size: 15px;
-  text-align: center;
-  line-height:100vh;
-  color: white;
+#line4 {
+  background-color:darkgoldenrod;
+  font-size: 47px;
+  text-align:center;
 }
-.banner p:last-child{
-  position: absolute;
-  top:165px;
-  left:0;
-  width: 100%;
-  height: 100%;
-  font-size: 15px;
-  text-align: center;
-  line-height:100vh;
-  color: white;
+#line5 {
+  background-color:#273e54;
+  font-size: 35px;
+  text-align:left;
 }
-
 body {
   justify-content: center;
   align-items: center;
@@ -76,17 +42,18 @@ body {
 }
 
 .container {
-  position: relative;
+  position:relative;
   width: 24px;
   height: 24px;
-  top:190px;
+  top:-195px;
 }
 
 .chevron {
-  position: absolute;
+  position:absolute;
   width: 20px;
   height: 8px;
   opacity: 0;
+  top: 13px;
   transform: scale3d(0.5, 0.5, 0.5);
   animation: move 3s ease-out infinite;
 }
@@ -141,7 +108,7 @@ body {
 
 .text {
   display: block;
-  margin-top: 65px;
+  margin-top: 150px;
   margin-left: -26px;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 10px;
@@ -158,6 +125,39 @@ body {
   }
 }
 
+.banner2{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.banner2 h1{
+  position: absolute;
+  top:-170px;
+  left:0;
+  width: 100%;
+  height: 100%;
+  font-size: 55px;
+  text-align: center;
+  line-height:100vh;
+  color: white;
+  font-weight: bold;
+}
+.banner2 h3{
+  position:relative;
+  top:50px;
+  width: 840px;
+  line-height: 1.5;
+  left:0;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
 #nav{
   background-color:#e6e6e6;
   padding: 5px;
@@ -169,12 +169,12 @@ li:hover{
   background-color:whitesmoke;
 }
 #footer{
+  padding-top: 20px;
   height:200px;
   background-color:#3C6287;
   color: #fff;
 }
 #footer h3{
-  padding-top: 15px;
   font-size: 15px;
   text-align: center;
   color: white;
@@ -186,22 +186,22 @@ li:hover{
   color: white;
 }
 #first {
-	background-image: url("https://hazelchen02.github.io/final project/assets/noise.png");
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
   background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-  background-size: 50%;
-  background-position-x:left;
-  background-position-y:95px;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
   min-height: 800px;
 }
 #second {
-	background-image: url("https://hazelchen02.github.io/as3/assets/image1.jpg");
+	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
   background-color:#383838;
 	background-attachment: fixed;
-  background-size: 50%;
-  background-position-x:left;
-  background-position-y:95px;
+  background-size: 33%;
+  background-position-x: 80px;
+  background-position-y: 95px;
   background-repeat: no-repeat;
   min-height: 800px;
 }
@@ -231,8 +231,8 @@ li:hover{
 }
 .container-fluid h1{
   width: 100%;
-  height: 25%;
-  font-size: 40px;
+  height: 22%;
+  font-size: 50px;
   font-weight: bold;
 }
 .link-top {
@@ -241,10 +241,12 @@ li:hover{
   border-top: solid whitesmoke 2px;
 }
 .container-fluid h2{
-  height: 25%;
+  height: 15%;
+  font-weight: bold;
 }
 .container-fluid p{
-  font-size: 17px;
+  font-size: 20px;
+  width: 530px;
 }
 #third #fourth p{
   top:100px;

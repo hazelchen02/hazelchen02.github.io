@@ -10,6 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
     <title>遷建松山機場，桃園機場準備好了嗎？</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script type="text/javascript" src="javascript/chart.js"></script>
+
   </head>
 
   <body>
@@ -350,6 +354,14 @@
         </div>
 
         <div id="content3_9th" class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div><canvas id="chart1" width="100" height="40"></canvas></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content3_10th" class="container-fluid">
             <p>衛福部為了改善離島醫療資源不足的問題，從 2002 年開始推行空中轉診後送。金門、馬祖地區的轉診接收醫院集中在臺北市，且桃園機場無國內航線，因此松山機場對於離島的空中轉診後送便十分重要。以 2017 年至 2020 年來看，金門縣緊急醫療空中轉診共執行 417 趟次，每月平均執行約 7 趟次；連江縣緊急醫療空中轉診共計執行 209 趟次，每月平均執行約 3.5 趟次。</p>
         </div>
     </div>
@@ -366,14 +378,14 @@
             <h1 class="text-center">運輸量能否負荷？</h1>
             <div class="row">
                 <div class="col-md-6">
-                    <p>桃園國際機場為台灣最大且最重要的國際機場，為因應近年日益增長的客運量，預計在 2026 年完成第三航廈的興建工程。而在 2030 年，預計啟用的第三跑道也將投入運作。這些擴建工程預計將提高機場的運輸量能，包括每小時的起降架次從 50 次增加至 80～90 次，可乘載之客運量預估可提升至 6541 萬人次。<br><br>
-                        第一航廈和第二航廈的年容納量為 3700 萬人次，但在疫情前曾達到 4500 萬人次以上，導致擁擠旅客的情況。然而，第三航廈預計未來可容納 4500 萬人次以上，超過第一航廈和第二航廈的總和，三個航廈整體將提供 8200 萬人次的年旅客服務量，以因應預期的旅遊增長趨勢。<br><br>
-                        松山機場 2019 年客運量約 635 萬人次，2023 年截至九月約有 378 萬人次。
+                    <p>桃園國際機場為台灣最大且最重要的國際機場，從疫情前的 2019 年數據來看，該年桃園機場的客運量為約 4869 萬人次(48,689,372)，客運量年年增長，導致擁擠旅客的情況。為因應近年日益增長的客運量，交通部長王國材日前表示，表定 2026 年將會完成第三航廈的興建工程，而第三跑道也預計在 2030 年投入運作。
                     </p>
                 </div>
                 <div class="col-md-6">
+                    <div><canvas id="chart2" width="100" height="45"></canvas></div>
                 </div>
-            </div>   
+            </div>
+            <p id="content4_1st_p">這些擴建工程將提高機場的運輸量能，除了每小時的起降架次從 50 次增加至 80～90 次外，單就第三航廈即可負荷 4500 萬人次以上的客運量，整體容納能力超過第一航廈和第二航廈的總和，三個航廈將提供 8200 萬人次的年客運量，預估能因應旅遊預期增長趨勢。</p>
         </div>
 
         <div id="content4_2nd" class="container-fluid">
@@ -443,6 +455,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
+
+    <script src='javascript/chart.js'></script>
+
   </body>
 </html>

@@ -378,7 +378,7 @@ li:hover{
 	background-repeat: no-repeat;
   background-size: 33%;
   background-position-x: 750px;
-  background-position-y: 160px;
+  background-position-y: 170px;
   min-height: 700px;
 }
 #content2_2nd {
@@ -491,7 +491,15 @@ li:hover{
   width: 100%;
   padding: 60px;
 }
-#content3_9th p{
+#content3_9th {
+  height: 70vh;
+}
+.col-md-8{
+  left: 180px;
+  top: -20px;
+  background-color: whitesmoke;
+}
+#content3_10th p{
   width: 100%;
   padding: 60px;
 }
@@ -508,7 +516,7 @@ li:hover{
   font-size: 55px;
   text-align: center;
   line-height:100vh;
-  color:whitesmoke;
+  color:#f5f5f5;
   font-weight: bold;
 }
 #content4 h1{
@@ -517,17 +525,23 @@ li:hover{
   font-size: 47px;
   font-weight: bold;
 }
-#content4 p{
-  width: 590px;
+#content4_1st{
+  height: 150vh;
 }
-#content4_1st {
-	background-image: url("https://hazelchen02.github.io/project/assets/image1.png");
-  background-color:#383838;
-	background-repeat: no-repeat;
-  background-size: 33%;
-  background-position-x: 750px;
-  background-position-y: 200px;
-  min-height: 700px;
+#content4_1st .col-md-6:last-child{
+  background-color: whitesmoke;
+  height: 235px;
+  top: -30px;
+}
+#content4_1st p:first-child{
+  width: 500px;
+}
+#content4_1st_p{
+  width: 98%;
+  padding-left: 60px;
+}
+#content4_2nd{
+  height: 150vh;
 }
 #content4_2nd {
 	background-image: url("https://hazelchen02.github.io/project/assets/image (3).png");
@@ -538,6 +552,12 @@ li:hover{
   background-position-y: 140px;
   min-height: 700px;
 }
+#content4_2nd p{
+  width: 590px;
+}
+#content4_3rd{
+  height: 150vh;
+}
 #content4_3rd {
 	background-image: url("https://hazelchen02.github.io/project/assets/image (1).png");
   background-color:#383838;
@@ -547,6 +567,12 @@ li:hover{
   background-position-y: 140px;
   min-height: 700px;
 }
+#content4_3rd p{
+  width: 590px;
+}
+#content4_4th{
+  height: 100vh;
+}
 #content4_4th {
 	background-image: url("https://hazelchen02.github.io/project/assets/S__753670.jpg");
   background-color:#383838;
@@ -554,6 +580,9 @@ li:hover{
   background-size: 33%;
   background-position-x: 750px;
   background-position-y: 30px;
+}
+#content4_4th p{
+  width: 590px;
 }
 #sep4{
   background-color: #383838;
@@ -573,11 +602,11 @@ li:hover{
 #content5_1st{
   height: 100vh;
   width: 100%;
-  background:rgba(0,0,0,0.4);
+  background:rgba(0,0,0,0.5);
 }
 #content5 p{
   width: 1200px;
-  padding-top: 65px;
+  padding-top: 80px;
   color: whitesmoke;
   font-size: 18.5px;
   padding-left: 50px;

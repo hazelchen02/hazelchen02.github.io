@@ -14,42 +14,48 @@ body{
   background: #383838;
   line-height: 1.5;
 }
-.banner1 p{
-  color: whitesmoke;
+#bannertext{
+  padding-top: 20px;
+}
+#banner1 p{
+  line-height: 1.3;
+  color:darkgrey;
   font-weight: bolder;
   font-style: italic;
 }
 #line1 {
-  background-color: #3C6287;
-  font-size: 40px;
-  text-align: right;
+  font-size: 18px;
 }
 #line2 {
-  background-color:darkred;
-  font-size: 47px;
-  text-align:right;
+  font-size: 25px;
 }
 #line3 {
-  background-color:black;
-  font-size: 30px;
-  text-align:center;
+  font-size: 34px;
 }
 #line4 {
-  background-color:darkgoldenrod;
-  font-size: 47px;
-  text-align:center;
+  font-size: 20px;
 }
 #line5 {
-  background-color:#273e54;
-  font-size: 35px;
-  text-align:left;
+  font-size: 40px;
 }
-
+#line6 {
+  font-size: 20px;
+}
+.highlight{
+	background-image: linear-gradient(90deg, #383838 50%, #ABC6CE 50%);
+	background-position: 0%;
+	background-size: 200%;
+}
+.highlight:hover{
+  background-position: -100%;
+  transition: all 0.5s ;
+  color: #383838;
+}
 .container {
   position:relative;
   width: 24px;
   height: 24px;
-  top:-195px;
+  top:-200px;
 }
 
 .chevron {
@@ -145,12 +151,12 @@ body{
   top:0;
   left:0;
   object-fit: cover;
-  opacity: 50%;
+  opacity: 55%;
 }
 #banner2 h1{
   position: absolute;
-  top: -140px;
-  left: 40px;
+  top: -145px;
+  left: 80px;
   width: 1000px;
   height: 100%;
   font-size: 53px;
@@ -161,25 +167,25 @@ body{
 }
 #banner2 h3{
   position:relative;
-  top:150px;
+  top:110px;
   width: 800px;
-  line-height: 1.5;
-  left: 30px;
+  line-height: 1.6;
+  left: 70px;
   height: 100%;
-  font-size: 17px;
+  font-size: 16.5px;
   text-align: left;
   color: whitesmoke;
 }
 
 #nav{
-  background-color:#e6e6e6;
+  background-color:whitesmoke;
   padding: 5px;
 }
 li{
   display:block;
 }
 li:hover{
-  background-color:whitesmoke;
+  background-color:#ABC6CE;
 }
 #footer{
   padding-top: 20px;
@@ -223,12 +229,17 @@ li:hover{
   font-size: 30px;
 }
 .container-fluid p{
-  font-size: 20px;
+  font-size: 19px;
   width: 530px;
+}
+#content1 {
+  background-image: url("https://hazelchen02.github.io/project/assets/old.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: 100%;
 }
 #content1_1st {
 	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -239,13 +250,12 @@ li:hover{
 #content1_2nd h1{
   width: 100%;
   height: 38%;
-  font-size: 50px;
+  font-size: 47px;
   font-weight: bold;
   line-height: 1.3;
 }
 #content1_2nd {
 	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -255,7 +265,6 @@ li:hover{
 }
 #content1_3rd {
 	background-image: url("https://hazelchen02.github.io/project/assets/2.png");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -265,7 +274,6 @@ li:hover{
 }
 #content1_4th {
 	background-image: url("https://hazelchen02.github.io/project/assets/3.png");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -275,7 +283,6 @@ li:hover{
 }
 #content1_5th {
 	background-image: url("https://hazelchen02.github.io/project/assets/4.png");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -285,7 +292,6 @@ li:hover{
 }
 #content1_6th {
 	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -295,7 +301,6 @@ li:hover{
 }
 #content1_7th {
 	background-image: url("https://hazelchen02.github.io/project/assets/6.png");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -305,7 +310,6 @@ li:hover{
 }
 #content1_8th {
 	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -315,7 +319,6 @@ li:hover{
 }
 #content1_9th {
 	background-image: url("https://hazelchen02.github.io/project/assets/8.png");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -325,7 +328,6 @@ li:hover{
 }
 #content1_10th {
 	background-image: url("https://hazelchen02.github.io/project/assets/9.png");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -335,7 +337,6 @@ li:hover{
 }
 #content1_11th {
 	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -345,7 +346,6 @@ li:hover{
 }
 #content1_12th {
 	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -355,7 +355,6 @@ li:hover{
 }
 #content1_13th {
 	background-image: url("https://hazelchen02.github.io/project/assets/12.png");
-  background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
@@ -365,28 +364,38 @@ li:hover{
 }
 #sep1{
   background-color: #383838;
-  height: 400px;
+  height: 100px;
 }
 #content2 h1{
   width: 100%;
   height: 85px;
-  font-size: 50px;
+  font-size: 47px;
   font-weight: bold;
 }
-#content2{
-  padding: 75px;
+#content2_1st {
+	background-image: url("https://hazelchen02.github.io/project/assets/13.png");
+  background-color:#383838;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 750px;
+  background-position-y: 160px;
+  min-height: 700px;
 }
-#content2 p{
+#content2_2nd {
+  padding: 75px;
+  height: 100vh;
+}
+#content2_2nd p{
   width: 100%;
 }
-#content2_1st{
-  height: 100vh;
-}
-#content2_2nd{
-  height: 100vh;
-}
-#content2_3rd{
-  height: 100vh;
+#content2_3rd {
+	background-image: url("https://hazelchen02.github.io/project/assets/15.png");
+  background-color:#383838;
+	background-repeat: no-repeat;
+  background-size: 33%;
+  background-position-x: 750px;
+  background-position-y: 140px;
+  min-height: 700px;
 }
 
 #sep2{
@@ -408,67 +417,67 @@ li:hover{
 #content3_2nd h1{
   width: 100%;
   height: 85px;
-  font-size: 50px;
+  font-size: 47px;
   font-weight: bold;
 }
 #content3_1st {
-	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
+	background-image: url("https://hazelchen02.github.io/project/assets/image (1).png");
   background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
   background-position-x: 750px;
-  background-position-y: 95px;
+  background-position-y: 160px;
   min-height: 800px;
 }
 #content3_2nd {
-	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
+	background-image: url("https://hazelchen02.github.io/project/assets/image (1).png");
   background-color:#383838;
 	background-attachment: fixed;
   background-size: 33%;
   background-position-x: 750px;
-  background-position-y: 95px;
+  background-position-y: 160px;
   background-repeat: no-repeat;
   min-height: 800px;
 }
 #content3_3rd {
-	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
+	background-image: url("https://hazelchen02.github.io/project/assets/image0.png");
   background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
   background-position-x: 750px;
-  background-position-y: 95px;
+  background-position-y: 160px;
   min-height: 800px;
 }
 #content3_4th {
-	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
+	background-image: url("https://hazelchen02.github.io/project/assets/image (1).png");
   background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
   background-position-x: 750px;
-  background-position-y: 95px;
+  background-position-y: 160px;
   min-height: 800px;
 }
 #content3_5th {
-	background-image: url("https://hazelchen02.github.io/project/assets/S__4448330.jpg");
+	background-image: url("https://hazelchen02.github.io/project/assets/image0.png");
   background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
   background-position-x: 750px;
-  background-position-y: 95px;
+  background-position-y: 160px;
   min-height: 800px;
 }
 #content3_6th {
-	background-image: url("https://hazelchen02.github.io/project/assets/S__4448332.jpg");
+	background-image: url("https://hazelchen02.github.io/project/assets/image (1).png");
   background-color:#383838;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
   background-size: 33%;
   background-position-x: 750px;
-  background-position-y: 95px;
+  background-position-y: 160px;
   min-height: 800px;
 }
 #content3_7th{
@@ -505,7 +514,7 @@ li:hover{
 #content4 h1{
   width: 100%;
   height: 100px;
-  font-size: 50px;
+  font-size: 47px;
   font-weight: bold;
 }
 #content4 p{
@@ -562,14 +571,19 @@ li:hover{
   font-weight: bold;
 }
 #content5_1st{
-  width: 100%;
   height: 100vh;
+  width: 100%;
+  background:rgba(0,0,0,0.4);
 }
 #content5 p{
-  padding: 60px;
-  width: 100%;
+  width: 1200px;
+  padding-top: 65px;
+  color: whitesmoke;
+  font-size: 18.5px;
+  padding-left: 50px;
 }
 #content5{
-  background-image: url("https://hazelchen02.github.io/project/assets/image (2).png");
+  background: url("https://hazelchen02.github.io/project/assets/image (2).png");
   background-size: cover;
+  background-position-y: 840px;
 }

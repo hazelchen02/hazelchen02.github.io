@@ -1,3 +1,7 @@
+$(window).on('load', function () {
+    $('#loading').hide();
+}) 
+
 var ctx = document.getElementById("chart1").getContext("2d");
 var chartdata = {
 	type: "line",
@@ -8,12 +12,36 @@ var chartdata = {
 				label: "松山機場近六年國內航線進出旅客（萬人次）",
 				data: [280, 297, 309, 266, 163, 250],
 				fill: false,
-				borderColor: "rgb(60, 98, 135)",
+				borderColor: "rgb(171,198,206)",
 				tension: 0.1,
+				backgroundColor: "rgba(171,198,206)",
 			}
 		]
 	},
-	options: {}
+	options: {
+		legend: {
+            labels: {
+				fontColor: "white",
+				fontSize: 18,
+			}
+        },
+        scales: { 
+            yAxes: [{
+                ticks: {
+                    fontColor: "white",
+                },
+				gridLines: {color: "rgba(169, 169, 169)"
+				}
+            }],
+			xAxes: [{
+                ticks: {
+                    fontColor: "white",
+                },
+				gridLines: {color: "rgba(211, 211, 211)"
+				}
+            }]
+        }
+	}
 };
 
 
@@ -43,12 +71,36 @@ var chartdata2 = {
 				label: "桃園國際機場客運量總計（萬人次）",
 				data: [2329, 2675, 2641, 2927, 3221, 3580, 3847, 4230, 4488, 4654, 4869, 744, 91, 534, 2839],
 				fill: false,
-				borderColor: "rgb(60, 98, 135)",
+				borderColor: "rgb(171,198,206)",
 				tension: 0.1,
+				backgroundColor: "rgba(171,198,206)",
 			}
 		]
 	},
-	options: {}
+	options: {
+		legend: {
+            labels: {
+				fontColor: "white",
+				fontSize: 18,
+			}
+        },
+        scales: { 
+            yAxes: [{
+                ticks: {
+                    fontColor: "white",
+                },
+				gridLines: {color: "rgba(169, 169, 169)"
+				}
+            }],
+			xAxes: [{
+                ticks: {
+                    fontColor: "white",
+                },
+				gridLines: {color: "rgba(211, 211, 211)"
+				}
+            }]
+        }
+	}
 };
 
 var inView2 = false;

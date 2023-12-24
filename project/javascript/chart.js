@@ -1,5 +1,5 @@
 $(window).on('load', function () {
-    $('#loading').hide();
+    $('#loading').hide(2000);
 }) 
 
 var ctx = document.getElementById("chart1").getContext("2d");

@@ -284,6 +284,7 @@ body{
 #nav{
   background-color:whitesmoke;
   padding: 5px;
+  z-index: 98;
 }
 li{
   display:block;
